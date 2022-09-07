@@ -1,0 +1,237 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="KEYWORDS" content="身高體重">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.ginifab.com.tw/tools/weight_converter/img/bmi_calculator.jpg">
+    <meta property="og:title" content="身體健康度計算">
+    <meta property="og:description" content="糖尿病計算">
+    <link rel="canonical" href="https://www.ginifab.com.tw/tools/weight_converter/bmi_calculator.html">
+
+    <title>糖尿病檢測</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style type="text/css">
+    @media all{
+    body,td,th {font-family: Arial, Helvetica, sans-serif;}
+    .h1_title{margin:0px;padding:0px 0px 0px 2px;font-size:24px;background:#a2e57f;}
+    .tr0 {background-color:#f9d1d5;}
+    .tr1 {background-color:#FFFFCC;}
+    .tr2 {background-color:#c0ffbf;}
+    .divFunction{float:left;margin:0px 10px 0px 0px;}
+    .divPanel{border-width:1px;border-style:solid;border-color:green;width:420px;padding:2px;}
+    .tblPanel{width:300px;font-size:22px}
+    .tblPanel td{border: 1px solid #cccccc;padding:2px 12px 2px 2px}
+    #divFormula{border: 1px solid #f9a965;background: #ffff66;width: 300px;text-align: center;padding: 5px;}
+    #kg,#cm,#bmi{width:60px;font-size:22px}
+    #waist{width:60px;font-size:22px}
+    #tblBMI{}
+    #tblBMI td{border: 1px solid #cccccc;padding:1px 5px 1px 5px}
+    .tr3 {background-color:#f9d1d5;}
+    .tr4 {background-color:#FFFFCC;}
+    .tr4:hover {background-color:#dce3ff;}
+    .tr5 {background-color:#c0ffbf;}
+    .tr5:hover {background-color:#dce3ff;}
+
+    .divContainer {height: auto;overflow: hidden;}
+    .divRight {width:300px;float:right;}
+    .divLeft {float:none;width:auto;overflow:hidden;}
+    .nowrap{white-space:nowrap;}
+    .frac {display: inline-block;position: relative;vertical-align: middle;letter-spacing: 0.001em;text-align: center;}
+    .frac > span {display: block;padding: 0.1em;}
+    .frac span.bottom { border-top: thin solid black;}
+    .frac span.symbol { display: none;}
+    }
+
+    @media only screen and (max-width: 1366px){
+    .divPanel{width:380px;}
+    }
+
+    @media only screen and (max-width: 1200px){
+    .divPanel{width:320px;}
+    }
+
+    @media only screen and (max-width: 1024px){
+    .divPanel{width:auto;}
+    }
+
+    @media only screen and (max-width: 800px){
+    .h1_title{margin:0px;padding:0px;font-size:22px;}
+    .divFunction{float:none;margin:0px 0px 10px 0px;}
+    .divPanel{width:99%;padding:10px;}
+    }
+
+    @media only screen and (max-width: 500px){
+    body {margin:0px;}
+    .divPanel{padding:2px;}
+    }
+
+    </style>
+    <script src="https://connect.facebook.net/zh_TW/sdk.js?hash=2490b3c10911ddcb7968398bb93f5dae" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script type="text/javascript" src="js/general.js"></script>
+    <script type="text/javascript" src="../colors/js/qrcode.min.js"></script>
+    <style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+    .fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+    .fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:15px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:19px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:13px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:13px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:17px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+    .fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+    .fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
+    <body>
+    <div class="divContainer">
+    <div class="divRight">
+    <script>
+    if (screen.width > 500){
+    Auto_AD();
+    document.write('<br>');
+    Auto_AD();
+    document.write('<br>');
+    Auto_MatchedContenAD();
+    document.write('<br>');
+    Auto_AD();
+    }
+    </script>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4791673797380117" data-ad-slot="2986444197" data-ad-format="auto" data-full-width-responsive="true"></ins><br>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4791673797380117" data-ad-slot="2986444197" data-ad-format="auto" data-full-width-responsive="true"></ins><br>
+    <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-4791673797380117" data-ad-slot="9150945566"></ins><br>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4791673797380117" data-ad-slot="2986444197" data-ad-format="auto" data-full-width-responsive="true"></ins>
+
+    </div>
+
+    <div class="divLeft">
+    <div>
+    <div class="divFunction">
+    <h1 class="h1_title">糖尿病計算</h1>
+    <form>
+    <div class="divPanel">
+    <table class="tblPanel">
+    <tbody><tr class="tr1">
+        <td>糖化血色素(HbA1c)</td><td><input id="n1" type="number" onchange="cal(this);" onkeyup="cal(this);" placeholder="" title="請輸入數字" value=""> %</td>
+    </tr>
+    <tr class="tr2">
+        <td>空腹血漿血糖</td><td><input id="n2" type="number" onchange="cal(this);" onkeyup="cal(this);" placeholder="" title="請輸入數字" value=""> mg/dL</td>
+    </tr>
+    <tr class="tr1">
+        <td>口服葡萄糖耐受試驗第2小時血漿血糖</td><td><input id="n3" type="number" onchange="cal(this);" onkeyup="cal(this);" placeholder="" title="請輸入數字" value=""> mg/dL</td>
+    </tr>
+    <tr class="tr2">
+        <td>典型的高血糖症狀(多吃、多喝、多尿與體重減輕)且隨機血漿血糖</td><td><input id="n4" type="number" onchange="cal(this);" onkeyup="cal(this);" placeholder="" title="請輸入數字" value=""> mg/dL</td>
+    </tr>
+    <tr class="tr0">
+    <td title="糖尿病檢測結果">檢測結果為:</td>
+    </tr>
+
+    </tbody></table>
+    <div style="margin-top:5px;" id="msg">希望大家都能常保健康</div>
+    <div style="margin-top:5px;" id="msg2">希望大家都能常保健康</div>
+    <div style="margin-top:5px;" id="msg3">希望大家都能常保健康</div>
+    <div style="margin-top:5px;" id="msg4">希望大家都能常保健康</div>
+    </div>
+    </form>
+    </div>
+
+
+    </div>
+    </form>
+    </div>
+    </div>
+    <br style="clear:both;"><br>
+
+
+    <div>
+        <p>(一) 糖化血色素(HbA1c)≧6.5%</p>
+        <p>(二) 空腹血漿血糖≧126 mg/dL</p>
+        <p>(三) 口服葡萄糖耐受試驗第2小時血漿血糖≧200 mg/dL</p>
+        <p>(四) 典型的高血糖症狀(多吃、多喝、多尿與體重減輕)且隨機血漿血糖≧200 mg/dL</p>
+        <p>皆可能為糖尿病</p>
+    </div>
+
+
+    <script type="text/javascript">
+    var e_n0=document.getElementById('n0');
+    var e_n1=document.getElementById('n1');
+    var e_n2=document.getElementById('n2');
+    var e_n3=document.getElementById('n3');
+    var e_n4=document.getElementById('n4');
+    var e_msg=document.getElementById('msg');
+    var e_msg2=document.getElementById('msg2');
+    var e_msg3=document.getElementById('msg3');
+    var e_msg4=document.getElementById('msg4');
+
+    function cal(t){
+        if((e_n1.value=='') || isNaN(e_n1.value)){
+      e_msg.innerHTML="請填入正確的數字";
+      return ;
+    }
+    if (e_n1.value==6.5){
+      e_msg.innerHTML="糖化血色素壓線要注意。";
+    } else if (e_n1.value>6.5){
+      e_msg.innerHTML="糖化血色素危險。";
+    } else if (e_n1.value<6.5){
+      e_msg.innerHTML="糖化血色素健康。";
+    }
+
+
+
+        if((e_n2.value=='') || isNaN(e_n2.value)){
+      e_msg2.innerHTML="請填入正確的數字";
+      return ;
+    }
+    if (e_n2.value==126){
+      e_msg2.innerHTML="空腹血漿血糖壓線要注意。";
+    } else if (e_n2.value>126){
+      e_msg2.innerHTML="空腹血漿血糖危險。";
+    } else if (e_n2.value<126){
+      e_msg2.innerHTML="空腹血漿血糖健康。";
+    }
+
+
+
+        if((e_n3.value=='') || isNaN(e_n3.value)){
+      e_msg3.innerHTML="請填入正確的數字";
+      return ;
+    }
+    if (e_n3.value==200){
+      e_msg3.innerHTML="口服葡萄糖耐受試驗第2小時血漿血糖壓線要注意。";
+    } else if (e_n3.value>200){
+      e_msg3.innerHTML="口服葡萄糖耐受試驗第2小時血漿血糖危險。";
+    } else if (e_n3.value<200){
+      e_msg3.innerHTML="口服葡萄糖耐受試驗第2小時血漿血糖健康。";
+    }
+
+
+
+        if((e_n4.value=='') || isNaN(e_n4.value)){
+      e_msg4.innerHTML="請填入正確的數字";
+      return ;
+    }
+    if (e_n4.value==200){
+      e_msg4.innerHTML="典型的高血糖症狀(多吃、多喝、多尿與體重減輕)且隨機血漿血糖壓線要注意。";
+    } else if (e_n4.value>200){
+      e_msg4.innerHTML="典型的高血糖症狀(多吃、多喝、多尿與體重減輕)且隨機血漿血糖危險。";
+    } else if (e_n4.value<200){
+      e_msg4.innerHTML="典型的高血糖症狀(多吃、多喝、多尿與體重減輕)且隨機血漿血糖健康。";
+    }
+    }
+
+
+
+
+    </script>
+
+    <div style="clear:both"></div>
+    <p>
+    <script type="text/javascript">
+    if (screen.width <= 500){Auto_AD();}
+    </script>
+    </p>
+
+
+    <br>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-592e6b2c0806de57"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-2333732-4"></script>
+    <script>
+    ConvertMenu2Mobile('tblBottomMenu');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-2333732-4');
+    </script>
+
+    </body></html>
